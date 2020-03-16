@@ -17,13 +17,13 @@ includes:
 search: true
 ---
 
-# Introduction
+# Introdução
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Seja bem-vindo(a) à documentação de referência da Registradora API! Nesta página você encontrará de forma detalhada os passos necessários para se autenticar na nossa API e utilizar os diversos endpoints disponíveis. 
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+Na barra lateral do lado esquerdo, você poderá encontrar o índice da documentação e uma caixa de pesquisa. Utilize-os para navegar pelas seções deste documento e para encontrar alguma informação específica.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+Já na barra lateral do lado direito, é o lugar onde exibimos códigos de exemplo que você pode utilizar para testar a nossa API. Você pode selecionar em qual linguagem de programação os exemplos serão exibidos através do menu de seleção na parte superior.  
 
 # Authentication
 
