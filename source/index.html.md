@@ -65,9 +65,11 @@ Para todas as requisições feitas ao servidor, a API espera que o seu token de 
 Você deve substituir <code>SEU_TOKEN</code> pelo token de autenticação gerado através do portal.
 </aside>
 
-# Kittens
+![Gerando um token pelo portal](images/autenticacao/gerar-token.gif)
 
-## Get All Kittens
+# Duplicatas
+
+## Listar duplicatas
 
 ```ruby
 require 'kittn'
@@ -116,22 +118,19 @@ let kittens = api.kittens.get();
 ]
 ```
 
-This endpoint retrieves all kittens.
+Este endpoint lista todos os ativos do tipo duplicata vinculados ao seu cadastro na plataforma.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET /api/v1/assets/trade_bills`
 
 ### Query Parameters
 
-Parameter | Default | Description
+Parâmetro | Default | Descrição
 --------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+p | '' | Define os critérios de paginação do resultado da consulta. Consulte a seção [Paginação de resultados](##paginacao-de-resultados) para entender melhor como este parâmetro funciona.
+q | '' | Define filtros de pesquisa que devem ser aplicados na consulta. Consulte a seção [Filtros de pesquisa](##filtros-de-pesquisa) para entender melhor como este parâmetro funciona.
+s | '' | Define os critérios de ordenação do resultado da consulta. Consulte a seção [Ordenação de resultados](##ordenacao-de-resultados) para entender melhor como este parâmetro funciona.
 
 ## Get a Specific Kitten
 
