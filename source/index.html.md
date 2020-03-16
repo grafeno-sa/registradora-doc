@@ -25,7 +25,7 @@ Na barra lateral do lado esquerdo, você poderá encontrar o índice da document
 
 Já na barra lateral do lado direito, é o lugar onde exibimos códigos de exemplo que você pode utilizar para testar a nossa API. Você pode selecionar em qual linguagem de programação os exemplos serão exibidos através do menu de seleção na parte superior.  
 
-# Authentication
+# Autenticação
 
 > To authorize, use this code:
 
@@ -55,14 +55,14 @@ let api = kittn.authorize('meowmeowmeow');
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+A Registradora utiliza tokens de autenticação para permitir o acesso à API. Você pode cadastrar um novo token de autenticação através do nosso [portal](http://example.com/developers). 
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Para todas as requisições feitas ao servidor, a API espera que o seu token de autenticação esteja presente em um cabeçalho no seguinte formato:
 
-`Authorization: meowmeowmeow`
+`Authorization: SEU_TOKEN`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+Você deve substituir <code>SEU_TOKEN</code> pelo token de autenticação gerado através do portal.
 </aside>
 
 # Kittens
