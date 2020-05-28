@@ -1,0 +1,1703 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-a1ce949a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-5558ca84.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introducao" class="toc-h1 toc-link" data-title="Introdução">Introdução</a>
+          </li>
+          <li>
+            <a href="#autenticacao" class="toc-h1 toc-link" data-title="Autenticação">Autenticação</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#autenticacao-de-aplicacoes-cliente" class="toc-h2 toc-link" data-title="Autenticação de aplicações cliente">Autenticação de aplicações cliente</a>
+                  </li>
+                  <li>
+                    <a href="#autenticacao-de-usuarios" class="toc-h2 toc-link" data-title="Autenticação de usuários">Autenticação de usuários</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#duplicatas" class="toc-h1 toc-link" data-title="Duplicatas">Duplicatas</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#cadastrar-duplicata" class="toc-h2 toc-link" data-title="Cadastrar duplicata">Cadastrar duplicata</a>
+                  </li>
+                  <li>
+                    <a href="#consultar-duplicata" class="toc-h2 toc-link" data-title="Consultar duplicata">Consultar duplicata</a>
+                  </li>
+                  <li>
+                    <a href="#listar-duplicatas" class="toc-h2 toc-link" data-title="Listar duplicatas">Listar duplicatas</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#erros" class="toc-h1 toc-link" data-title="Erros">Erros</a>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introducao'>Introdução</h1>
+<p>Seja bem-vindo(a) à documentação de referência da API. Nesta página você encontrará de forma detalhada os passos necessários para se autenticar na nossa API e utilizar os diversos endpoints disponíveis. </p>
+
+<p>Na barra lateral do lado esquerdo, você poderá encontrar o índice da documentação e uma caixa de pesquisa. Utilize-os para navegar pelas seções deste documento e para encontrar alguma informação específica.</p>
+
+<p>Já na barra lateral do lado direito, é o lugar onde exibimos códigos de exemplo que você pode utilizar para testar a nossa API. Você pode selecionar em qual linguagem de programação os exemplos serão exibidos através do menu de seleção na parte superior.  </p>
+<h1 id='autenticacao'>Autenticação</h1>
+<p>A API possui uma camada dupla de autenticação para garantir a segurança dos dados e evitar que acessos indevidos possam comprometer a privacidade da informações.</p>
+
+<p>A primeira camada de autenticação é a <a href="#autenticacao-de-aplicacoes-cliente">autenticação de aplicações cliente</a>, através da qual, apenas aplicações previamente autorizadas poderão originar qualquer tipo de requisição à API.</p>
+
+<p>A segunda camada de autenticação é a <a href="#autenticacao-de-usuarios">autenticação de usuários</a>, através da qual, apenas pessoas que possuem um cadastro de usuário válido e ativo, poderão acessar à API. </p>
+
+<p>Com exceção das requisições de autenticação, todas as demais requisições à API deverão ser realizadas por um usuário autenticado e através de uma aplicação autorizada, simultaneamente.  </p>
+<h2 id='autenticacao-de-aplicacoes-cliente'>Autenticação de aplicações cliente</h2>
+<blockquote>
+<p>Este é um exemplo do cabeçalho de uma requisição contendo o token de autenticação da aplicação:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"Authorization"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27cc4835-53e9-4dcc-a064-d6609549f9ea.QHrAqIvp4M8dxWmmQZ1h3P85Vww"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Não se esqueça de substituir o valor do exemplo pelo token de autenticação da sua aplicação.</p>
+</blockquote>
+
+<p>Esta camada de segurança permite que a API identifique qual aplicação cliente está originando uma requisição. Caso a aplicação esteja autorizada para acessar à API, a requisição é processada, caso contrário, a requisição é bloqueada e uma mensagem de erro é devolvida em resposta (consulte a seção <a href="#erros">erros</a> para obter mais referências). </p>
+
+<p>Para autenticar a aplicação cliente, é necessário incluir o token de autenticação da aplicação no cabeçalho de <strong>todas</strong> as requisições feitas à API.</p>
+
+<aside class="warning">Este token é secreto e não deve ser compartilhado publicamente. Mantenha ele salvo em um lugar seguro e caso desconfie de um possível vazamento, solicite que um novo token seja gerado.</aside>
+        
+<h2 id='autenticacao-de-usuarios'>Autenticação de usuários</h2>
+<p>Esta camada protege os dados da API contra o acesso de pessoas não autorizadas e garante a privacidade dos dados dos usuários. A autenticação de usuários é feita através de tokens de autenticação JWT e ocorre em duas etapas.</p>
+
+<blockquote>
+<p>Este é um exemplo do corpo da requisição que deve ser enviada no endpoint de login:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user@company.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secret"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Este é um exemplo do cabeçalho retornado na resposta da API, contendo as informações do token de acesso do usuário autenticado:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"access-token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ZGLvgsf1dDs59sIybcIitg"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"client"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bohV15kuQUVrriur8F911Q"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user@company.com"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Na primeira etapa, é necessário enviar uma requisição para o endpoint de login da API com as credenciais de acesso do usuário que está solicitando acesso, no caso, e-mail e senha. Caso as credenciais enviadas estejam corretas, a API irá retornar uma resposta de sucesso, e junto, no cabeçalho da resposta, irá retornar um token de acesso exclusivo para o usuário, composto de 3 partes: <code>access-token</code>, <code>client</code> e <code>uid</code>.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET /api/v1/auth/sign_in</code></p>
+<h3 id='parametros-da-requisicao'>Parâmetros da requisição</h3>
+<p>Estas são as definições dos parâmetros aceitos por este endpoint.</p>
+
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>email</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>E-mail cadastrado do usuário.</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Senha de acesso do usuário.</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Este é um exemplo do cabeçalho de uma requisição com os tokens de autenticação da aplicação e do usuário:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"Authorization"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27cc4835-53e9-4dcc-a064-d6609549f9ea.QHrAqIvp4M8dxWmmQZ1h3P85Vww"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"access-token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ZGLvgsf1dDs59sIybcIitg"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"client"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bohV15kuQUVrriur8F911Q"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user@company.com"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Na segunda etapa, já em posse do token de acesso do usuário, basta realizar as requisições desejadas à API, adicionando ao cabeçalho da requisição, todas as partes do token do usuário e também o token da aplicação. Desta forma, a API será capaz de validar a identidade do usuário que realizou uma requisição e também garantir que esta mesma requisição foi originada a partir de uma aplicação autorizada. </p>
+<h1 id='duplicatas'>Duplicatas</h1><h2 id='cadastrar-duplicata'>Cadastrar duplicata</h2>
+<blockquote>
+<p>Este é um exemplo do objeto que deve ser passado no corpo da requisição:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"asset_trade_bill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"emitted_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T18:43:45.000-03:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"goods"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"operation_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"acquired_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-21T16:52:20.000-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"installments_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">56903.54</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T19:33:34.000-03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T12:24:36.000-03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">69628.45</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">76712.54</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"payments_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T01:58:04.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">68397.21</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T00:14:15.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">20569.46</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T04:50:30.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">69376.56</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">93630.54</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T02:31:05.000-03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T22:38:47.000-03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">98205.86</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">33916.25</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"payments_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T04:50:36.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">90527.48</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T10:23:55.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">94030.36</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T17:24:00.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">90111.18</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">70367.69</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T00:30:52.000-03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T16:57:23.000-03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">28355.28</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">63912.31</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"payments_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T13:13:00.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">65163.91</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T19:10:35.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">25503.78</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T20:13:21.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">14381.48</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"assignor_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sbshrzps8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amoreira-Datena"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sra. Enzo Miguel Arantes"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"loree_watsica@farrellmedhurst.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(49) 90145-7420"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52749223000400"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teie@turner.info"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Paula Gabeira"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(92) 96830-5355"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7k702q"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Igaci"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Apto. 892"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"632"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Eagle Oaks"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RN"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avenida João Lucas"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65822-129"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"creditor_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6o1g730i1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ferraço, Chaves e Hermingues"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Milena da Bandeira"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bruno@little.io"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(96) 93437-7194"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11489737000217"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"garry@franecki.biz"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beatriz Pinheira"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(24) 99039-5994"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ugmu6z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Engenho Velho"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Apto. 929"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"73160"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Summer Place"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BA"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ponte Gustavo"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"43010-929"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"guarantor_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rbdtl9211"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Garcez e Associados"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Srta. Francisca Laranjeira"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"young.considine@mantemcglynn.co"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(84) 99529-3386"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05977230000714"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"meredith@heidenreich.io"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Matheus Silva"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(45) 98505-7840"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d8dqzc"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Piau"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casa 4"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4243"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Willow Gardens"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avenida César"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14044-876"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"payer_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ty5zlkcf8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ribas Comércio"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Maria Chaves"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cletus.braun@kiehn.net"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(98) 91467-8897"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"68109436000319"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"garland@borerrogahn.net"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Davi Ludmer Carvalheira"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(61) 95562-6444"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wb90ls"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Itapitanga"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casa 5"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"281"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pine Court"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TO"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ponte Natália Aroeira"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28449-337"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"nfe_attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"nfe_access_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35200248477780000191550010000033561442834725"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Este endpoint realiza o cadastro de um novo ativo do tipo duplicata na plataforma.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>POST /api/v1/assets/trade_bills</code></p>
+<h3 id='parametros-da-requisicao'>Parâmetros da requisição</h3>
+<p>Estas são as definições dos parâmetros aceitos por este endpoint. O objeto JSON enviado na requisição deve possuir uma chave raiz chamada <code>asset_trade_bill</code> e todos os outros parâmetros devem estar contidos dentro desta chave.</p>
+<h3 id='ativo'>Ativo</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>emitted_at</code></td>
+<td><code>datetime</code></td>
+<td>sim</td>
+<td>Data e hora de emissão do ativo.</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Tipo do ativo. Use <code>goods</code> para bens e <code>services</code> para serviços.</td>
+</tr>
+<tr>
+<td><code>assignor_attributes</code></td>
+<td><code>object</code></td>
+<td>sim</td>
+<td>Dados do cedente do ativo. Consulte a seção <a href="#parte_da_operacao">Parte da operação</a> para a relação completa dos parâmetros.</td>
+</tr>
+<tr>
+<td><code>creditor_attributes</code></td>
+<td><code>object</code></td>
+<td>não</td>
+<td>Dados do credor do ativo. Consulte a seção <a href="#parte_da_operacao">Parte da operação</a> para a relação completa dos parâmetros.</td>
+</tr>
+<tr>
+<td><code>guarantor_attributes</code></td>
+<td><code>object</code></td>
+<td>não</td>
+<td>Dados do avalista do ativo. Consulte a seção <a href="#parte_da_operacao">Parte da operação</a> para a relação completa dos parâmetros.</td>
+</tr>
+<tr>
+<td><code>operation_attributes</code></td>
+<td><code>object</code></td>
+<td>sim</td>
+<td>Dados da operação de aquisição do ativo. Consulte a seção <a href="#operacao">Operação</a> para a relação completa dos parâmetros.</td>
+</tr>
+<tr>
+<td><code>payer_attributes</code></td>
+<td><code>object</code></td>
+<td>sim</td>
+<td>Dados do sacado do ativo. Consulte a seção <a href="#parte_da_operacao">Parte da operação</a> para a relação completa dos parâmetros.</td>
+</tr>
+<tr>
+<td><code>nfe_attributes</code></td>
+<td><code>object</code></td>
+<td>sim</td>
+<td>Dados da nota fiscal que dá lastro ao ativo. Consulte a seção <a href="#nfe_attributes">Nota fiscal</a> para a relação completa dos parâmetros.</td>
+</tr>
+</tbody></table>
+<h3 id='operacao'>Operação</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>acquired_at</code></td>
+<td><code>datetime</code></td>
+<td>sim</td>
+<td>Data e hora de aquisição do ativo.</td>
+</tr>
+<tr>
+<td><code>installments_attributes</code></td>
+<td><code>array</code></td>
+<td>não</td>
+<td>Dados das parcelas do ativo. Consulte a seção <a href="#parcela">Parcela</a> para a relação completa dos parâmetros.</td>
+</tr>
+</tbody></table>
+<h3 id='parcela'>Parcela</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>acquisition_value</code></td>
+<td><code>number</code></td>
+<td>sim</td>
+<td>Valor de aquisição da parela.</td>
+</tr>
+<tr>
+<td><code>due_date</code></td>
+<td><code>datetime</code></td>
+<td>sim</td>
+<td>Data atual de vencimento da parcela.</td>
+</tr>
+<tr>
+<td><code>original_due_date</code></td>
+<td><code>datetime</code></td>
+<td>sim</td>
+<td>Data original de vencimento da parcela.</td>
+</tr>
+<tr>
+<td><code>original_value</code></td>
+<td><code>number</code></td>
+<td>sim</td>
+<td>Valor nominal original da parcela.</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>number</code></td>
+<td>sim</td>
+<td>Valor nominal atual do parcela.</td>
+</tr>
+<tr>
+<td><code>payments_attributes</code></td>
+<td><code>array</code></td>
+<td>não</td>
+<td>Dados das baixas da parcela. Consulte a seção <a href="#baixa">Baixa</a> para a relação completa dos parâmetros.</td>
+</tr>
+</tbody></table>
+<h3 id='baixa'>Baixa</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>performed_at</code></td>
+<td><code>datetime</code></td>
+<td>sim</td>
+<td>Data do pagamento.</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td><code>number</code></td>
+<td>sim</td>
+<td>Valor pago.</td>
+</tr>
+</tbody></table>
+<h3 id='parte-da-operacao'>Parte da operação</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>city_registration_number</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Número de inscrição municipal.</td>
+</tr>
+<tr>
+<td><code>company_name</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Nome da empresa.</td>
+</tr>
+<tr>
+<td><code>contact_representative_kind</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Tipo do representante da empresa. User <code>contact</code> para contato e <code>representative</code> para representante legal.</td>
+</tr>
+<tr>
+<td><code>contact_representative_name</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Nome completo do representante da empresa.</td>
+</tr>
+<tr>
+<td><code>contact_representative_email</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>E-mail do representante da empresa.</td>
+</tr>
+<tr>
+<td><code>contact_representative_phone</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Telefone do representante da empresa.</td>
+</tr>
+<tr>
+<td><code>document_number</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Número do cpf ou cnpj (somente números).</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>E-mail de contato.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Nome completo.</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Telefone de contato.</td>
+</tr>
+<tr>
+<td><code>state_registration_number</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Número de inscrição estadual.</td>
+</tr>
+</tbody></table>
+<h3 id='endereco'>Endereço</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>city</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Nome da cidade.</td>
+</tr>
+<tr>
+<td><code>complement</code></td>
+<td><code>string</code></td>
+<td>não</td>
+<td>Complemento ou ponto de referência do endereço.</td>
+</tr>
+<tr>
+<td><code>number</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Número do endereço.</td>
+</tr>
+<tr>
+<td><code>neighborhood</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Nome do bairro.</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Nome do estado abreviado.</td>
+</tr>
+<tr>
+<td><code>street</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Logradouro do endereço.</td>
+</tr>
+<tr>
+<td><code>zip_code</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Número do CEP do endereço.</td>
+</tr>
+</tbody></table>
+<h3 id='nota-fiscal'>Nota fiscal</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Tipo</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>nfe_access_key</code></td>
+<td><code>string</code></td>
+<td>sim</td>
+<td>Chave de acesso da nota fiscal.</td>
+</tr>
+</tbody></table>
+<h2 id='consultar-duplicata'>Consultar duplicata</h2>
+<blockquote>
+<p>Este é um exemplo do objeto retornado na resposta deste endpoint:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"asset"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"asset_register_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"asset_register_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AssetTradeBill"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-28T18:56:05.082-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T01:47:48.000-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"emitted_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T23:49:27.000-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"goods"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rejected"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-28T18:56:05.469-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7c5a4293-da34-4040-b349-9581ab9a961d"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"167270.35"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"operations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"acquired_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T16:50:31.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T01:47:48.000-03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"99281.86"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"489194.14"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"167270.35"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"installment"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"44694.37"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T01:47:48.000-03:00"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T17:48:15.000-03:00"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"72122.15"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"185486.81"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"97516.71"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-27T23:31:48.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"93020.51"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T01:10:19.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51311.61"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T04:19:50.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"41154.69"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">]</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"installment"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24866.73"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T22:56:54.000-03:00"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T16:54:01.000-03:00"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54648.79"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"160293.38"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"43188.95"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T05:51:44.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"44673.15"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T23:37:32.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45419.69"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-27T09:07:16.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"70200.54"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">]</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"installment"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"29720.76"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-21T11:04:45.000-03:00"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T22:34:11.000-03:00"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"96588.35"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"143413.95"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"26564.69"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T23:28:51.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"53370.73"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T22:09:28.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54196.28"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T10:03:08.000-03:00"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35846.94"</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">]</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">],</span><span class="w">
+              </span><span class="s2">"operation_parts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30601800000129"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assignor"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uvvmlxp8h"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bomdia, Godins e Madeira"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Eduarda Duarte"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"woodrow@boscoklein.biz"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(69) 95759-5198"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30601800000129"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elsie@schmitt.com"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Helena da Veiga"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(61) 99721-6729"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"u90bxg"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Brasnorte"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casa 6"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52493"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn Oaks"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RR"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Travessa João Samuel Dorneles"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"44899-600"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">},</span><span class="w">
+                            </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30601800000129"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52502608000118"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"guarantor"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s83s3uvdp"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"da Barra-Chaves"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dr. Elisa da Penha"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"frederic@gerlach.com"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(94) 98855-9067"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52502608000118"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rhett@feest.biz"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dr. Arthur Rocha"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(43) 95606-0774"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"r8hppx"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uruará"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quadra 25"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20215"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Royal Gardens"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AM"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Pedro"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"93510-997"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">},</span><span class="w">
+                            </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52502608000118"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40950656000190"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payer"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hj2kx2k78"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cavalcanti LTDA"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sra. Theo Rios"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"evan.mayert@pfannerstill.com"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(68) 98580-4818"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40950656000190"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"norberto_nienow@sauerwill.net"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Srta. Erick Ramos"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(43) 99641-1928"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ppu8x5"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mutuípe"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Apto. 927"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s/n"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pine Creek"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PA"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Giulia Diegues"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54178-684"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">},</span><span class="w">
+                            </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40950656000190"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77482889000972"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"creditor"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                          </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xrwryd1yu"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Souza-Ferraço"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nicolas da Rocha Neto"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kathrine.brown@kunzeruecker.io"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(75) 98708-1402"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77482889000972"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"georgiana@lowewilliamson.co"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gúbio Carvalho"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(44) 98652-0492"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pbfdn8"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anamã"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sobrado 68"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3054"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Royal Oaks"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PA"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Esther"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"71097-112"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">},</span><span class="w">
+                            </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77482889000972"</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"coverage_registers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"coverage_register"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"state_invalid_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assignor_document_mismatch"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"coverage_item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"coverage_register_nfe"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"nfe_access_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35200248477780000191550010000033561442834725"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Este endpoint retorna as informações de um ativo específico do tipo duplicata vinculado ao seu cadastro na plataforma.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /api/v1/assets/trade_bills/:id</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parâmetro</th>
+<th>Obrigatório?</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>sim</td>
+<td>Identificador do ativo do tipo duplicata cadastrado na API</td>
+</tr>
+</tbody></table>
+<h2 id='listar-duplicatas'>Listar duplicatas</h2>
+<blockquote>
+<p>Este é um exemplo do objeto retornado na resposta deste endpoint:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"asset"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"asset_register_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"asset_register_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AssetTradeBill"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-28T18:56:05.082-03:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T01:47:48.000-03:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emitted_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T23:49:27.000-03:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"goods"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rejected"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-28T18:56:05.469-03:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7c5a4293-da34-4040-b349-9581ab9a961d"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"167270.35"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"operations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"acquired_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T16:50:31.000-03:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T01:47:48.000-03:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"99281.86"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"489194.14"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"167270.35"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"installment"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"44694.37"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T01:47:48.000-03:00"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T17:48:15.000-03:00"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"72122.15"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"185486.81"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"97516.71"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-27T23:31:48.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"93020.51"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">},</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T01:10:19.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51311.61"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">},</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T04:19:50.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"41154.69"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">]</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"installment"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24866.73"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-22T22:56:54.000-03:00"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-23T16:54:01.000-03:00"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54648.79"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"160293.38"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"43188.95"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T05:51:44.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"44673.15"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">},</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T23:37:32.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45419.69"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">},</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-27T09:07:16.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"70200.54"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">]</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"installment"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"acquisition_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"29720.76"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-21T11:04:45.000-03:00"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"original_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T22:34:11.000-03:00"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"original_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"96588.35"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"paid_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"143413.95"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"26564.69"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-25T23:28:51.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"53370.73"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">},</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-24T22:09:28.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54196.28"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">},</span><span class="w">
+                          </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"performed_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-05-26T10:03:08.000-03:00"</span><span class="p">,</span><span class="w">
+                                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35846.94"</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">]</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"operation_parts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30601800000129"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assignor"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uvvmlxp8h"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bomdia, Godins e Madeira"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Eduarda Duarte"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"woodrow@boscoklein.biz"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(69) 95759-5198"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30601800000129"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elsie@schmitt.com"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Helena da Veiga"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(61) 99721-6729"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"u90bxg"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Brasnorte"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Casa 6"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52493"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Autumn Oaks"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RR"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Travessa João Samuel Dorneles"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"44899-600"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">},</span><span class="w">
+                              </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30601800000129"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52502608000118"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"guarantor"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s83s3uvdp"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"da Barra-Chaves"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dr. Elisa da Penha"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"frederic@gerlach.com"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(94) 98855-9067"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52502608000118"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rhett@feest.biz"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dr. Arthur Rocha"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(43) 95606-0774"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"r8hppx"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uruará"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Quadra 25"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20215"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Royal Gardens"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AM"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Pedro"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"93510-997"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">},</span><span class="w">
+                              </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52502608000118"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40950656000190"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payer"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hj2kx2k78"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cavalcanti LTDA"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sra. Theo Rios"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"evan.mayert@pfannerstill.com"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(68) 98580-4818"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40950656000190"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"norberto_nienow@sauerwill.net"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Srta. Erick Ramos"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(43) 99641-1928"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ppu8x5"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mutuípe"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Apto. 927"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s/n"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pine Creek"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PA"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Giulia Diegues"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54178-684"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">},</span><span class="w">
+                              </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40950656000190"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation_part"</span><span class="p">,</span><span class="w">
+                      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77482889000972"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"role"</span><span class="p">:</span><span class="w"> </span><span class="s2">"creditor"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"part_variant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part_variant"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                              </span><span class="s2">"city_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xrwryd1yu"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Souza-Ferraço"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contact"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nicolas da Rocha Neto"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kathrine.brown@kunzeruecker.io"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"contact_representative_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(75) 98708-1402"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77482889000972"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"georgiana@lowewilliamson.co"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gúbio Carvalho"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"phone_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(44) 98652-0492"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"state_registration_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pbfdn8"</span><span class="p">,</span><span class="w">
+                              </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"address"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anamã"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sobrado 68"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3054"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"neighborhood"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Royal Oaks"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PA"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Esther"</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"71097-112"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">},</span><span class="w">
+                              </span><span class="s2">"part"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"part"</span><span class="p">,</span><span class="w">
+                                  </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77482889000972"</span><span class="w">
+                                  </span><span class="p">}</span><span class="w">
+                                </span><span class="p">}</span><span class="w">
+                              </span><span class="p">}</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                          </span><span class="p">}</span><span class="w">
+                        </span><span class="p">}</span><span class="w">
+                      </span><span class="p">}</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"coverage_registers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"coverage_register"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"state_invalid_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assignor_document_mismatch"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"coverage_item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"coverage_register_nfe"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                      </span><span class="s2">"nfe_access_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35200248477780000191550010000033561442834725"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Este endpoint lista todos os ativos do tipo duplicata vinculados ao seu cadastro na plataforma.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /api/v1/assets/trade_bills</code></p>
+<h1 id='erros'>Erros</h1>
+<p>Esta é a lista dos erros que eventualmente podem ocorrer ao enviar uma requisição para a API e também uma breve descrição das possíveis causas de cada problema:</p>
+
+<table><thead>
+<tr>
+<th>Código</th>
+<th>Erro</th>
+<th>Descrição</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+<td>A requisição não foi montada corretamente. Pode ser que o corpo da requisição possua algum erro de formatação ou que algum parâmetro do cabeçalho esteja mal preenchido.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+<td>Não foi possível autenticar o acesso. Pode ser que o token de autenticação da aplicação ou do usuário não tenham sido adicionados ao cabeçalho da requisição ou que eles não tenham sido preenchidos corretamente.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+<td>O recurso solicitado não foi encontrado. Pode ser que o ID passado na requisição esteja errado, que não exista um dado cadastrado com o ID fornecido ou que o endereço tenha sido digitado errado.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+<td>Ocorreu algum problema interno na API ao tentar processar a requisição. Se o problema persistir, nos mande uma mensagem através <a href="mailto:meajuda@grafeno.digital">desse email</a> com mais detalhes sobre a requisição que deu problema.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
