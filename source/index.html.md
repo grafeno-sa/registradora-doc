@@ -11,7 +11,6 @@ includes:
   - duplicatas_cadastrar
   - duplicatas_consultar
   - duplicatas_listar
-  - consultas_avancadas
   - erros
 
 search: true

@@ -6,226 +6,409 @@
 {
   "data": [
     {
-      "id": "2",
-      "type": "assetTradeBill",
+      "id": "1",
+      "type": "asset",
       "attributes": {
-        "acquiredAt": "2020-03-26T13:00:41.000-03:00",
-        "createdAt": "2020-04-01T11:52:27.192-03:00",
-        "dueDate": "2020-04-06",
-        "emittedAt": "2020-03-27T12:33:58.000-03:00",
+        "asset_register_id": 1,
+        "asset_register_type": "AssetTradeBill",
+        "created_at": "2020-05-28T18:56:05.082-03:00",
+        "due_date": "2020-05-25T01:47:48.000-03:00",
+        "emitted_at": "2020-05-23T23:49:27.000-03:00",
         "kind": "goods",
-        "state": "draft",
-        "updatedAt": "2020-04-01T11:52:27.192-03:00",
-        "value": "98.45",
-        "assetCoverageNfe": {
-          "data": {
-            "id": "2",
-            "type": "assetCoverageNfe",
-            "attributes": {
-              "nfeAccessKey": "35200248477780000191550010000033561442834725"
+        "state": "rejected",
+        "updated_at": "2020-05-28T18:56:05.469-03:00",
+        "uuid": "7c5a4293-da34-4040-b349-9581ab9a961d",
+        "value": "167270.35",
+        "operations": [
+          {
+            "data": {
+              "id": "1",
+              "type": "operation",
+              "attributes": {
+                "acquired_at": "2020-05-25T16:50:31.000-03:00",
+                "due_date": "2020-05-25T01:47:48.000-03:00",
+                "acquisition_value": "99281.86",
+                "paid_value": "489194.14",
+                "value": "167270.35",
+                "installments": [
+                  {
+                    "data": {
+                      "id": "1",
+                      "type": "installment",
+                      "attributes": {
+                        "acquisition_value": "44694.37",
+                        "due_date": "2020-05-25T01:47:48.000-03:00",
+                        "original_due_date": "2020-05-26T17:48:15.000-03:00",
+                        "original_value": "72122.15",
+                        "paid_value": "185486.81",
+                        "value": "97516.71",
+                        "payments": [
+                          {
+                            "data": {
+                              "id": "1",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-27T23:31:48.000-03:00",
+                                "value": "93020.51"
+                              }
+                            }
+                          },
+                          {
+                            "data": {
+                              "id": "2",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-22T01:10:19.000-03:00",
+                                "value": "51311.61"
+                              }
+                            }
+                          },
+                          {
+                            "data": {
+                              "id": "3",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-23T04:19:50.000-03:00",
+                                "value": "41154.69"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "2",
+                      "type": "installment",
+                      "attributes": {
+                        "acquisition_value": "24866.73",
+                        "due_date": "2020-05-22T22:56:54.000-03:00",
+                        "original_due_date": "2020-05-23T16:54:01.000-03:00",
+                        "original_value": "54648.79",
+                        "paid_value": "160293.38",
+                        "value": "43188.95",
+                        "payments": [
+                          {
+                            "data": {
+                              "id": "4",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-26T05:51:44.000-03:00",
+                                "value": "44673.15"
+                              }
+                            }
+                          },
+                          {
+                            "data": {
+                              "id": "5",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-25T23:37:32.000-03:00",
+                                "value": "45419.69"
+                              }
+                            }
+                          },
+                          {
+                            "data": {
+                              "id": "6",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-27T09:07:16.000-03:00",
+                                "value": "70200.54"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "3",
+                      "type": "installment",
+                      "attributes": {
+                        "acquisition_value": "29720.76",
+                        "due_date": "2020-05-21T11:04:45.000-03:00",
+                        "original_due_date": "2020-05-24T22:34:11.000-03:00",
+                        "original_value": "96588.35",
+                        "paid_value": "143413.95",
+                        "value": "26564.69",
+                        "payments": [
+                          {
+                            "data": {
+                              "id": "7",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-25T23:28:51.000-03:00",
+                                "value": "53370.73"
+                              }
+                            }
+                          },
+                          {
+                            "data": {
+                              "id": "8",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-24T22:09:28.000-03:00",
+                                "value": "54196.28"
+                              }
+                            }
+                          },
+                          {
+                            "data": {
+                              "id": "9",
+                              "type": "payment",
+                              "attributes": {
+                                "performed_at": "2020-05-26T10:03:08.000-03:00",
+                                "value": "35846.94"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "operation_parts": [
+                  {
+                    "data": {
+                      "id": "1",
+                      "type": "operation_part",
+                      "attributes": {
+                        "document_number": "30601800000129",
+                        "role": "assignor",
+                        "part_variant": {
+                          "data": {
+                            "id": "1",
+                            "type": "part_variant",
+                            "attributes": {
+                              "city_registration_number": "uvvmlxp8h",
+                              "company_name": "Bomdia, Godins e Madeira",
+                              "contact_representative_kind": "contact",
+                              "contact_representative_name": "Eduarda Duarte",
+                              "contact_representative_email": "woodrow@boscoklein.biz",
+                              "contact_representative_phone": "(69) 95759-5198",
+                              "document_number": "30601800000129",
+                              "email": "elsie@schmitt.com",
+                              "name": "Helena da Veiga",
+                              "phone_number": "(61) 99721-6729",
+                              "state_registration_number": "u90bxg",
+                              "address": {
+                                "data": {
+                                  "id": "3",
+                                  "type": "address",
+                                  "attributes": {
+                                    "city": "Brasnorte",
+                                    "complement": "Casa 6",
+                                    "number": "52493",
+                                    "neighborhood": "Autumn Oaks",
+                                    "state": "RR",
+                                    "street": "Travessa João Samuel Dorneles",
+                                    "zip_code": "44899-600"
+                                  }
+                                }
+                              },
+                              "part": {
+                                "data": {
+                                  "id": "1",
+                                  "type": "part",
+                                  "attributes": {
+                                    "document_number": "30601800000129"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "2",
+                      "type": "operation_part",
+                      "attributes": {
+                        "document_number": "52502608000118",
+                        "role": "guarantor",
+                        "part_variant": {
+                          "data": {
+                            "id": "2",
+                            "type": "part_variant",
+                            "attributes": {
+                              "city_registration_number": "s83s3uvdp",
+                              "company_name": "da Barra-Chaves",
+                              "contact_representative_kind": "contact",
+                              "contact_representative_name": "Dr. Elisa da Penha",
+                              "contact_representative_email": "frederic@gerlach.com",
+                              "contact_representative_phone": "(94) 98855-9067",
+                              "document_number": "52502608000118",
+                              "email": "rhett@feest.biz",
+                              "name": "Dr. Arthur Rocha",
+                              "phone_number": "(43) 95606-0774",
+                              "state_registration_number": "r8hppx",
+                              "address": {
+                                "data": {
+                                  "id": "4",
+                                  "type": "address",
+                                  "attributes": {
+                                    "city": "Uruará",
+                                    "complement": "Quadra 25",
+                                    "number": "20215",
+                                    "neighborhood": "Royal Gardens",
+                                    "state": "AM",
+                                    "street": "Rua Pedro",
+                                    "zip_code": "93510-997"
+                                  }
+                                }
+                              },
+                              "part": {
+                                "data": {
+                                  "id": "2",
+                                  "type": "part",
+                                  "attributes": {
+                                    "document_number": "52502608000118"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "3",
+                      "type": "operation_part",
+                      "attributes": {
+                        "document_number": "40950656000190",
+                        "role": "payer",
+                        "part_variant": {
+                          "data": {
+                            "id": "3",
+                            "type": "part_variant",
+                            "attributes": {
+                              "city_registration_number": "hj2kx2k78",
+                              "company_name": "Cavalcanti LTDA",
+                              "contact_representative_kind": "contact",
+                              "contact_representative_name": "Sra. Theo Rios",
+                              "contact_representative_email": "evan.mayert@pfannerstill.com",
+                              "contact_representative_phone": "(68) 98580-4818",
+                              "document_number": "40950656000190",
+                              "email": "norberto_nienow@sauerwill.net",
+                              "name": "Srta. Erick Ramos",
+                              "phone_number": "(43) 99641-1928",
+                              "state_registration_number": "ppu8x5",
+                              "address": {
+                                "data": {
+                                  "id": "5",
+                                  "type": "address",
+                                  "attributes": {
+                                    "city": "Mutuípe",
+                                    "complement": "Apto. 927",
+                                    "number": "s/n",
+                                    "neighborhood": "Pine Creek",
+                                    "state": "PA",
+                                    "street": "Rua Giulia Diegues",
+                                    "zip_code": "54178-684"
+                                  }
+                                }
+                              },
+                              "part": {
+                                "data": {
+                                  "id": "3",
+                                  "type": "part",
+                                  "attributes": {
+                                    "document_number": "40950656000190"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "data": {
+                      "id": "4",
+                      "type": "operation_part",
+                      "attributes": {
+                        "document_number": "77482889000972",
+                        "role": "creditor",
+                        "part_variant": {
+                          "data": {
+                            "id": "4",
+                            "type": "part_variant",
+                            "attributes": {
+                              "city_registration_number": "xrwryd1yu",
+                              "company_name": "Souza-Ferraço",
+                              "contact_representative_kind": "contact",
+                              "contact_representative_name": "Nicolas da Rocha Neto",
+                              "contact_representative_email": "kathrine.brown@kunzeruecker.io",
+                              "contact_representative_phone": "(75) 98708-1402",
+                              "document_number": "77482889000972",
+                              "email": "georgiana@lowewilliamson.co",
+                              "name": "Gúbio Carvalho",
+                              "phone_number": "(44) 98652-0492",
+                              "state_registration_number": "pbfdn8",
+                              "address": {
+                                "data": {
+                                  "id": "6",
+                                  "type": "address",
+                                  "attributes": {
+                                    "city": "Anamã",
+                                    "complement": "Sobrado 68",
+                                    "number": "3054",
+                                    "neighborhood": "Royal Oaks",
+                                    "state": "PA",
+                                    "street": "Rua Esther",
+                                    "zip_code": "71097-112"
+                                  }
+                                }
+                              },
+                              "part": {
+                                "data": {
+                                  "id": "4",
+                                  "type": "part",
+                                  "attributes": {
+                                    "document_number": "77482889000972"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
-        },
-        "assetOperationParts": {
-          "data": [
-            {
-              "id": "4",
-              "type": "assetOperationPart",
+        ],
+        "coverage_registers": [
+          {
+            "data": {
+              "id": "1",
+              "type": "coverage_register",
               "attributes": {
-                "role": "assignor",
-                "assetPartVariant": {
+                "state": "invalid",
+                "state_invalid_reason": "assignor_document_mismatch",
+                "coverage_item": {
                   "data": {
-                    "id": "4",
-                    "type": "assetPartVariant",
+                    "id": "1",
+                    "type": "coverage_register_nfe",
                     "attributes": {
-                      "cityRegistrationNumber": "k3ws8ih8k",
-                      "companyName": "Coqueiro, Álvares e Paiva",
-                      "contactRepresentativeKind": "contact",
-                      "contactRepresentativeName": "Víctor Guedes Jr.",
-                      "contactRepresentativeEmail": "willow@macgyver.com",
-                      "contactRepresentativePhone": "(34) 92289-1937",
-                      "email": "lashaun_bogisich@moore.net",
-                      "name": "Pedro da Veiga",
-                      "phoneNumber": "(53) 92053-2427",
-                      "stateRegistrationNumber": "84xae7",
-                      "address": {
-                        "data": {
-                          "id": "7",
-                          "type": "address",
-                          "attributes": {
-                            "city": "Ibitirama",
-                            "complement": "Lote 54",
-                            "number": "623",
-                            "neighborhood": "Royal Creek",
-                            "state": "MT",
-                            "street": "Viela Leonardo da Barra",
-                            "zipCode": "30625-581"
-                          }
-                        }
-                      },
-                      "assetPart": {
-                        "data": {
-                          "id": "4",
-                          "type": "assetPart",
-                          "attributes": {
-                            "documentNumber": "08459883361"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "id": "5",
-              "type": "assetOperationPart",
-              "attributes": {
-                "role": "guarantor",
-                "assetPartVariant": {
-                  "data": {
-                    "id": "5",
-                    "type": "assetPartVariant",
-                    "attributes": {
-                      "cityRegistrationNumber": "myvcfce39",
-                      "companyName": "Veles-Melo",
-                      "contactRepresentativeKind": "contact",
-                      "contactRepresentativeName": "Ana Laura Fernandes",
-                      "contactRepresentativeEmail": "casie@walter.io",
-                      "contactRepresentativePhone": "(19) 90416-8347",
-                      "email": "nickolas@bauch.org",
-                      "name": "Maria Sophia Araújo",
-                      "phoneNumber": "(41) 91309-3038",
-                      "stateRegistrationNumber": "uixb6b",
-                      "address": {
-                        "data": {
-                          "id": "8",
-                          "type": "address",
-                          "attributes": {
-                            "city": "Mucugê",
-                            "complement": "Casa 2",
-                            "number": "696",
-                            "neighborhood": "Park Oaks",
-                            "state": "RR",
-                            "street": "Viela Nathan Ferreira",
-                            "zipCode": "12566-627"
-                          }
-                        }
-                      },
-                      "assetPart": {
-                        "data": {
-                          "id": "5",
-                          "type": "assetPart",
-                          "attributes": {
-                            "documentNumber": "07781191900"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "id": "6",
-              "type": "assetOperationPart",
-              "attributes": {
-                "role": "payer",
-                "assetPartVariant": {
-                  "data": {
-                    "id": "6",
-                    "type": "assetPartVariant",
-                    "attributes": {
-                      "cityRegistrationNumber": "hoz2x0s8g",
-                      "companyName": "Neves, Moreno e Arriaga",
-                      "contactRepresentativeKind": "contact",
-                      "contactRepresentativeName": "Luiz Gustavo Barros",
-                      "contactRepresentativeEmail": "judy_cummings@lind.com",
-                      "contactRepresentativePhone": "(49) 98845-6675",
-                      "email": "adaline_marks@wiegand.io",
-                      "name": "Eloah Almeida",
-                      "phoneNumber": "(84) 90249-0713",
-                      "stateRegistrationNumber": "wz73gd",
-                      "address": {
-                        "data": {
-                          "id": "9",
-                          "type": "address",
-                          "attributes": {
-                            "city": "Areias",
-                            "complement": "Sobrado 68",
-                            "number": "4657",
-                            "neighborhood": "Paradise Pointe",
-                            "state": "SP",
-                            "street": "Ponte Valentina",
-                            "zipCode": "01225-088"
-                          }
-                        }
-                      },
-                      "assetPart": {
-                        "data": {
-                          "id": "6",
-                          "type": "assetPart",
-                          "attributes": {
-                            "documentNumber": "02670411878"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "id": "7",
-              "type": "assetOperationPart",
-              "attributes": {
-                "role": "creditor",
-                "assetPartVariant": {
-                  "data": {
-                    "id": "7",
-                    "type": "assetPartVariant",
-                    "attributes": {
-                      "cityRegistrationNumber": "a7y3yf7td",
-                      "companyName": "Camacho e Associados",
-                      "contactRepresentativeKind": "contact",
-                      "contactRepresentativeName": "Sr. Fabiano Simão",
-                      "contactRepresentativeEmail": "nelda@rice.org",
-                      "contactRepresentativePhone": "(64) 93109-5973",
-                      "email": "jaunita@cummerata.co",
-                      "name": "Salvador da Bandeira",
-                      "phoneNumber": "(53) 95554-0357",
-                      "stateRegistrationNumber": "n8e96u",
-                      "address": {
-                        "data": {
-                          "id": "10",
-                          "type": "address",
-                          "attributes": {
-                            "city": "Santa Rosa de Lima",
-                            "complement": "Sobrado 18",
-                            "number": "s/n",
-                            "neighborhood": "Pine Pointe",
-                            "state": "MS",
-                            "street": "Rua João Victor Castanheira",
-                            "zipCode": "33775-295"
-                          }
-                        }
-                      },
-                      "assetPart": {
-                        "data": {
-                          "id": "7",
-                          "type": "assetPart",
-                          "attributes": {
-                            "documentNumber": "02851562509"
-                          }
-                        }
-                      }
+                      "nfe_access_key": "35200248477780000191550010000033561442834725"
                     }
                   }
                 }
               }
             }
-          ]
-        }
+          }
+        ]
       }
     }
   ]
@@ -238,10 +421,3 @@ Este endpoint lista todos os ativos do tipo duplicata vinculados ao seu cadastro
 
 `GET /api/v1/assets/trade_bills`
 
-### Query Parameters
-
-Parâmetro | Default | Obrigatório? | Descrição
---------- | ------- | ------- | -----------
-`p` | '' | não | Define os critérios de paginação do resultado da consulta. Consulte a seção [Paginação de resultados](#paginacao-de-resultados) para entender melhor como este parâmetro funciona.
-`q` | '' | não | Define filtros de pesquisa que devem ser aplicados na consulta. Consulte a seção [Filtros de pesquisa](#filtros-de-pesquisa) para entender melhor como este parâmetro funciona.
-`s` | '' | não | Define os critérios de ordenação do resultado da consulta. Consulte a seção [Ordenação de resultados](#ordenacao-de-resultados) para entender melhor como este parâmetro funciona.

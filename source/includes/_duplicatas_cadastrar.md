@@ -5,110 +5,165 @@
 ```json
 {
   "asset_trade_bill": {
-    "acquired_at": "2020-03-26T13:00:41.000-03:00",
-    "due_date": "2020-04-06",
-    "emitted_at": "2020-03-27T12:33:58.000-03:00",
-    "state": "draft",
-    "value": "98.45",
+    "emitted_at": "2020-05-24T18:43:45.000-03:00",
     "kind": "goods",
-    "type": "AssetTradeBill",
+    "operation_attributes": {
+      "acquired_at": "2020-05-21T16:52:20.000-03:00",
+      "installments_attributes": [
+        {
+          "acquisition_value": 56903.54,
+          "due_date": "2020-05-22T19:33:34.000-03:00",
+          "original_due_date": "2020-05-22T12:24:36.000-03:00",
+          "original_value": 69628.45,
+          "value": 76712.54,
+          "payments_attributes": [
+            {
+              "performed_at": "2020-05-24T01:58:04.000-03:00",
+              "value": 68397.21
+            },
+            {
+              "performed_at": "2020-05-25T00:14:15.000-03:00",
+              "value": 20569.46
+            },
+            {
+              "performed_at": "2020-05-24T04:50:30.000-03:00",
+              "value": 69376.56
+            }
+          ]
+        },
+        {
+          "acquisition_value": 93630.54,
+          "due_date": "2020-05-25T02:31:05.000-03:00",
+          "original_due_date": "2020-05-23T22:38:47.000-03:00",
+          "original_value": 98205.86,
+          "value": 33916.25,
+          "payments_attributes": [
+            {
+              "performed_at": "2020-05-23T04:50:36.000-03:00",
+              "value": 90527.48
+            },
+            {
+              "performed_at": "2020-05-23T10:23:55.000-03:00",
+              "value": 94030.36
+            },
+            {
+              "performed_at": "2020-05-26T17:24:00.000-03:00",
+              "value": 90111.18
+            }
+          ]
+        },
+        {
+          "acquisition_value": 70367.69,
+          "due_date": "2020-05-26T00:30:52.000-03:00",
+          "original_due_date": "2020-05-24T16:57:23.000-03:00",
+          "original_value": 28355.28,
+          "value": 63912.31,
+          "payments_attributes": [
+            {
+              "performed_at": "2020-05-23T13:13:00.000-03:00",
+              "value": 65163.91
+            },
+            {
+              "performed_at": "2020-05-22T19:10:35.000-03:00",
+              "value": 25503.78
+            },
+            {
+              "performed_at": "2020-05-22T20:13:21.000-03:00",
+              "value": 14381.48
+            }
+          ]
+        }
+      ]
+    },
     "assignor_attributes": {
+      "city_registration_number": "sbshrzps8",
+      "company_name": "Amoreira-Datena",
+      "contact_representative_kind": "contact",
+      "contact_representative_name": "Sra. Enzo Miguel Arantes",
+      "contact_representative_email": "loree_watsica@farrellmedhurst.com",
+      "contact_representative_phone": "(49) 90145-7420",
+      "document_number": "52749223000400",
+      "email": "teie@turner.info",
+      "name": "Paula Gabeira",
+      "phone_number": "(92) 96830-5355",
+      "state_registration_number": "7k702q",
       "address_attributes": {
-        "city": "Ibitirama",
-        "complement": "Lote 54",
-        "number": "623",
-        "neighborhood": "Royal Creek",
-        "state": "MT",
-        "street": "Viela Leonardo da Barra",
-        "zip_code": "30625-581"
-      },
-      "asset_part_variant_attributes": {
-        "city_registration_number": "k3ws8ih8k",
-        "company_name": "Coqueiro, Álvares e Paiva",
-        "contact_representative_kind": "contact",
-        "contact_representative_name": "Víctor Guedes Jr.",
-        "contact_representative_email": "willow@macgyver.com",
-        "contact_representative_phone": "(34) 92289-1937",
-        "email": "lashaun_bogisich@moore.net",
-        "name": "Pedro da Veiga",
-        "phone_number": "(53) 92053-2427",
-        "state_registration_number": "84xae7"
-      },
-      "document_number": "08459883361"
+        "city": "Igaci",
+        "complement": "Apto. 892",
+        "number": "632",
+        "neighborhood": "Eagle Oaks",
+        "state": "RN",
+        "street": "Avenida João Lucas",
+        "zip_code": "65822-129"
+      }
     },
     "creditor_attributes": {
+      "city_registration_number": "6o1g730i1",
+      "company_name": "Ferraço, Chaves e Hermingues",
+      "contact_representative_kind": "contact",
+      "contact_representative_name": "Milena da Bandeira",
+      "contact_representative_email": "bruno@little.io",
+      "contact_representative_phone": "(96) 93437-7194",
+      "document_number": "11489737000217",
+      "email": "garry@franecki.biz",
+      "name": "Beatriz Pinheira",
+      "phone_number": "(24) 99039-5994",
+      "state_registration_number": "ugmu6z",
       "address_attributes": {
-        "city": "Santa Rosa de Lima",
-        "complement": "Sobrado 18",
-        "number": "s/n",
-        "neighborhood": "Pine Pointe",
-        "state": "MS",
-        "street": "Rua João Victor Castanheira",
-        "zip_code": "33775-295"
-      },
-      "asset_part_variant_attributes": {
-        "city_registration_number": "a7y3yf7td",
-        "company_name": "Camacho e Associados",
-        "contact_representative_kind": "contact",
-        "contact_representative_name": "Sr. Fabiano Simão",
-        "contact_representative_email": "nelda@rice.org",
-        "contact_representative_phone": "(64) 93109-5973",
-        "email": "jaunita@cummerata.co",
-        "name": "Salvador da Bandeira",
-        "phone_number": "(53) 95554-0357",
-        "state_registration_number": "n8e96u"
-      },
-      "document_number": "02851562509"
+        "city": "Engenho Velho",
+        "complement": "Apto. 929",
+        "number": "73160",
+        "neighborhood": "Summer Place",
+        "state": "BA",
+        "street": "Ponte Gustavo",
+        "zip_code": "43010-929"
+      }
     },
     "guarantor_attributes": {
+      "city_registration_number": "rbdtl9211",
+      "company_name": "Garcez e Associados",
+      "contact_representative_kind": "contact",
+      "contact_representative_name": "Srta. Francisca Laranjeira",
+      "contact_representative_email": "young.considine@mantemcglynn.co",
+      "contact_representative_phone": "(84) 99529-3386",
+      "document_number": "05977230000714",
+      "email": "meredith@heidenreich.io",
+      "name": "Matheus Silva",
+      "phone_number": "(45) 98505-7840",
+      "state_registration_number": "d8dqzc",
       "address_attributes": {
-        "city": "Mucugê",
-        "complement": "Casa 2",
-        "number": "696",
-        "neighborhood": "Park Oaks",
-        "state": "RR",
-        "street": "Viela Nathan Ferreira",
-        "zip_code": "12566-627"
-      },
-      "asset_part_variant_attributes": {
-        "city_registration_number": "myvcfce39",
-        "company_name": "Veles-Melo",
-        "contact_representative_kind": "contact",
-        "contact_representative_name": "Ana Laura Fernandes",
-        "contact_representative_email": "casie@walter.io",
-        "contact_representative_phone": "(19) 90416-8347",
-        "email": "nickolas@bauch.org",
-        "name": "Maria Sophia Araújo",
-        "phone_number": "(41) 91309-3038",
-        "state_registration_number": "uixb6b"
-      },
-      "document_number": "07781191900"
+        "city": "Piau",
+        "complement": "Casa 4",
+        "number": "4243",
+        "neighborhood": "Willow Gardens",
+        "state": "PE",
+        "street": "Avenida César",
+        "zip_code": "14044-876"
+      }
     },
     "payer_attributes": {
+      "city_registration_number": "ty5zlkcf8",
+      "company_name": "Ribas Comércio",
+      "contact_representative_kind": "contact",
+      "contact_representative_name": "Maria Chaves",
+      "contact_representative_email": "cletus.braun@kiehn.net",
+      "contact_representative_phone": "(98) 91467-8897",
+      "document_number": "68109436000319",
+      "email": "garland@borerrogahn.net",
+      "name": "Davi Ludmer Carvalheira",
+      "phone_number": "(61) 95562-6444",
+      "state_registration_number": "wb90ls",
       "address_attributes": {
-        "city": "Areias",
-        "complement": "Sobrado 68",
-        "number": "4657",
-        "neighborhood": "Paradise Pointe",
-        "state": "SP",
-        "street": "Ponte Valentina",
-        "zip_code": "01225-088"
-      },
-      "asset_part_variant_attributes": {
-        "city_registration_number": "hoz2x0s8g",
-        "company_name": "Neves, Moreno e Arriaga",
-        "contact_representative_kind": "contact",
-        "contact_representative_name": "Luiz Gustavo Barros",
-        "contact_representative_email": "judy_cummings@lind.com",
-        "contact_representative_phone": "(49) 98845-6675",
-        "email": "adaline_marks@wiegand.io",
-        "name": "Eloah Almeida",
-        "phone_number": "(84) 90249-0713",
-        "state_registration_number": "wz73gd"
-      },
-      "document_number": "02670411878"
+        "city": "Itapitanga",
+        "complement": "Casa 5",
+        "number": "281",
+        "neighborhood": "Pine Court",
+        "state": "TO",
+        "street": "Ponte Natália Aroeira",
+        "zip_code": "28449-337"
+      }
     },
-    "asset_coverage_nfe_attributes": {
+    "nfe_attributes": {
       "nfe_access_key": "35200248477780000191550010000033561442834725"
     }
   }
@@ -117,67 +172,72 @@
 
 Este endpoint realiza o cadastro de um novo ativo do tipo duplicata na plataforma.
 
-### HTTP Request
+### Endpoint
 
 `POST /api/v1/assets/trade_bills`
 
-### Request Parameters
+### Parâmetros da requisição
 
-A seguir apresentamos a definição dos parâmetros aceitos por este endpoint. O objeto JSON enviado na requisição deve possuir uma chave raiz chamada `asset_trade_bill` e todos os outros parâmetros devem estar contidos dentro desta chave.
+Estas são as definições dos parâmetros aceitos por este endpoint. O objeto JSON enviado na requisição deve possuir uma chave raiz chamada `asset_trade_bill` e todos os outros parâmetros devem estar contidos dentro desta chave.
 
-### asset_trade_bill
+### Ativo
 
 Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`acquired_at` | `datetime` | sim | Data e hora de aquisição do ativo.
-`due_date` | `date` | sim | Data de vencimento do ativo.
+--------- | ---- | ------------ | ---------
 `emitted_at` | `datetime` | sim | Data e hora de emissão do ativo.
-`state` | `string` | sim | Situação atual do cadastro do ativo na plataforma. Consulte a seção [Status de duplicatas](#status-de-duplicatas) para a lista completa dos status possíveis. 
-`value` | `decimal` | sim | Valor do ativo. 
-`value` | `decimal` | sim | Valor, em dinheiro, do ativo. 
-`kind` | `string` | sim | Tipo do ativo. 
-`assignor_attributes` | `object` | sim | Dados do cedente do ativo. Consulte a seção [assignor_attributes](#assignor_attributes) para a relação completa dos parâmetros.
-`creditor_attributes` | `object` | não | Dados do credor do ativo. Consulte a seção [guarantor_attributes](#credor_attributes) para a relação completa dos parâmetros. 
-`guarantor_attributes` | `object` | não | Dados do avalista do ativo. Consulte a seção [guarantor_attributes](#guarantor_attributes) para a relação completa dos parâmetros. 
-`payer_attributes` | `object` | sim | Dados do sacado do ativo. Consulte a seção [payer_attributes](#payer_attributes) para a relação completa dos parâmetros.
-`asset_coverage_nfe_attributes` | `object` | sim | Dados da nota fiscal do ativo. Consulte a seção [asset_coverage_nfe_attributes](#asset_coverage_nfe_attributes) para a relação completa dos parâmetros.
+`kind` | `string` | sim | Tipo do ativo. Use `goods` para bens e `services` para serviços.
+`assignor_attributes` | `object` | sim | Dados do cedente do ativo. Consulte a seção [Parte da operação](#parte_da_operacao) para a relação completa dos parâmetros.
+`creditor_attributes` | `object` | não | Dados do credor do ativo. Consulte a seção [Parte da operação](#parte_da_operacao) para a relação completa dos parâmetros. 
+`guarantor_attributes` | `object` | não | Dados do avalista do ativo. Consulte a seção [Parte da operação](#parte_da_operacao) para a relação completa dos parâmetros. 
+`operation_attributes` | `object` | sim | Dados da operação de aquisição do ativo. Consulte a seção [Operação](#operacao) para a relação completa dos parâmetros.
+`payer_attributes` | `object` | sim | Dados do sacado do ativo. Consulte a seção [Parte da operação](#parte_da_operacao) para a relação completa dos parâmetros.
+`nfe_attributes` | `object` | sim | Dados da nota fiscal que dá lastro ao ativo. Consulte a seção [Nota fiscal](#nfe_attributes) para a relação completa dos parâmetros.
 
-### assignor_attributes
+### Operação
 
 Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`document_number` | `string` | sim | Número do documento do cedente, sem pontuação.
-`address_attributes` | `object` | sim | Dados do endereço do cedente. Consulte a seção [address_attributes](#address_attributes) para a relação completa dos parâmetros.
-`asset_part_variant_attributes` | `object` | sim | Dados do gerais sobre o cedente. Consulte a seção [asset_part_variant_attributes](#asset_part_variant_attributes) para a relação completa dos parâmetros.
+--------- | ---- | ------------ | ---------
+`acquired_at` | `datetime` | sim | Data e hora de aquisição do ativo.
+`installments_attributes` | `array` | não | Dados das parcelas do ativo. Consulte a seção [Parcela](#parcela) para a relação completa dos parâmetros. 
 
-### creditor_attributes
-
-Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`document_number` | `string` | sim | Número do documento do credor, sem pontuação.
-`address_attributes` | `object` | sim | Dados do endereço do credor. Consulte a seção [address_attributes](#address_attributes) para a relação completa dos parâmetros.
-`asset_part_variant_attributes` | `object` | sim | Dados do gerais sobre o credor. Consulte a seção [asset_part_variant_attributes](#asset_part_variant_attributes) para a relação completa dos parâmetros.
-
-### guarantor_attributes
+### Parcela
 
 Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`document_number` | `string` | sim | Número do documento do avalista, sem pontuação.
-`address_attributes` | `object` | sim | Dados do endereço do avalista. Consulte a seção [address_attributes](#address_attributes) para a relação completa dos parâmetros.
-`asset_part_variant_attributes` | `object` | sim | Dados do gerais sobre o avalista. Consulte a seção [asset_part_variant_attributes](#asset_part_variant_attributes) para a relação completa dos parâmetros.
+--------- | ---- | ------------ | ---------
+`acquisition_value` | `number` | sim | Valor de aquisição da parela.
+`due_date` | `datetime` | sim | Data atual de vencimento da parcela.
+`original_due_date` | `datetime` | sim | Data original de vencimento da parcela.
+`original_value` | `number` | sim | Valor nominal original da parcela.
+`value` | `number` | sim | Valor nominal atual do parcela.
+`payments_attributes` | `array` | não | Dados das baixas da parcela. Consulte a seção [Baixa](#baixa) para a relação completa dos parâmetros.
 
-### payer_attributes
-
-Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`document_number` | `string` | sim | Número do documento do sacado, sem pontuação.
-`address_attributes` | `object` | sim | Dados do endereço do sacado. Consulte a seção [address_attributes](#address_attributes) para a relação completa dos parâmetros.
-`asset_part_variant_attributes` | `object` | sim | Dados do gerais sobre o sacado. Consulte a seção [asset_part_variant_attributes](#asset_part_variant_attributes) para a relação completa dos parâmetros.
-
-### address_attributes
+### Baixa
 
 Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
+--------- | ---- | ------------ | ---------
+`performed_at` | `datetime` | sim | Data do pagamento.
+`value` | `number` | sim | Valor pago.
+
+### Parte da operação
+
+Parâmetro | Tipo | Obrigatório? | Descrição
+--------- | ---- | ------------ | ---------
+`city_registration_number` | `string` | não | Número de inscrição municipal.
+`company_name` | `string` | não | Nome da empresa.
+`contact_representative_kind` | `string` | não | Tipo do representante da empresa. User `contact` para contato e `representative` para representante legal. 
+`contact_representative_name` | `string` | não | Nome completo do representante da empresa.
+`contact_representative_email` | `string` | não | E-mail do representante da empresa.
+`contact_representative_phone` | `string` | não | Telefone do representante da empresa.
+`document_number` | `string` | sim | Número do cpf ou cnpj (somente números).
+`email` | `string` | não | E-mail de contato.
+`name` | `string` | sim | Nome completo.
+`phone_number` | `string` | não | Telefone de contato.
+`state_registration_number` | `string` | não | Número de inscrição estadual.
+
+### Endereço
+
+Parâmetro | Tipo | Obrigatório? | Descrição
+--------- | ---- | ------------ | ---------
 `city` | `string` | sim | Nome da cidade.
 `complement` | `string` | não | Complemento ou ponto de referência do endereço.
 `number` | `string` | sim | Número do endereço.
@@ -186,23 +246,8 @@ Parâmetro | Tipo | Obrigatório? | Descrição
 `street` | `string` | sim | Logradouro do endereço.
 `zip_code` | `string` | sim | Número do CEP do endereço.
 
-### asset_coverage_nfe_attributes
+### Nota fiscal
 
 Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`nfe_access_key` | `string` | sim | Adicionar descrição.
-
-### asset_part_variant_attributes
-
-Parâmetro | Tipo | Obrigatório? | Descrição
---------- | --------- | --------- | -----------
-`city_registration_number` | `string` | não | Adicionar descrição.
-`company_name` | `string` | não | Adicionar descrição.
-`contact_representative_kind` | `string` | não | Adicionar descrição.
-`contact_representative_name` | `string` | não | Adicionar descrição.
-`contact_representative_email` | `string` | não | Adicionar descrição.
-`contact_representative_phone` | `string` | não | Adicionar descrição.
-`email` | `string` | não | Adicionar descrição.
-`name` | `string` | sim | Adicionar descrição.
-`phone_number` | `string` | não | Adicionar descrição.
-`state_registration_number` | `string` | não | Adicionar descrição.
+--------- | ---- | ------------ | ---------
+`nfe_access_key` | `string` | sim | Chave de acesso da nota fiscal.
