@@ -308,7 +308,7 @@
 </span></code></pre>
 <p>Na primeira etapa, é necessário enviar uma requisição para o endpoint de login da API com as credenciais de acesso do usuário que está solicitando acesso, no caso, e-mail e senha. Caso as credenciais enviadas estejam corretas, a API irá retornar uma resposta de sucesso, e junto, no cabeçalho da resposta, irá retornar um token de acesso exclusivo para o usuário, composto de 3 partes: <code>access-token</code>, <code>client</code> e <code>uid</code>.</p>
 <h3 id='endpoint'>Endpoint</h3>
-<p><code>GET /api/v1/auth/sign_in</code></p>
+<p><code>POST /api/v1/auth/sign_in</code></p>
 <h3 id='parametros-da-requisicao'>Parâmetros da requisição</h3>
 <p>Estas são as definições dos parâmetros aceitos por este endpoint.</p>
 
