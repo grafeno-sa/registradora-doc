@@ -53,7 +53,7 @@ Na primeira etapa, é necessário enviar uma requisição para o endpoint de log
 
 ### Endpoint
 
-`GET /api/v1/auth/sign_in`
+`POST /api/v1/auth/sign_in`
 
 ### Parâmetros da requisição
 
